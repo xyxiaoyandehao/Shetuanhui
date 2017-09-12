@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shetuanhui.ShetuanshenqingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AFEEEE">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="社团"
+                android:textSize="40sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请输入相关信息完成社团申请"
+            android:textSize="20sp"
+            android:layout_marginTop="10sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/zhaoxiangji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/zhaoxiangji"
+                    android:scaleType="centerInside"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp" />
+                <ImageButton
+                    android:id="@+id/xiangce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/xiangce"
+                    android:scaleType="centerInside"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/touxiang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/shetuan"
+                android:scaleType="centerInside"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="名称"
+                android:layout_weight="3"
+                android:textSize="30sp"/>
+            <EditText
+                android:id="@+id/mingcheng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入社团名称"
+                android:layout_weight="1"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="简介"
+                android:layout_weight="3"
+                android:textSize="30sp"/>
+            <EditText
+                android:id="@+id/jianjie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入社团简介"
+                android:layout_weight="1"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/shenqing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提交申请"
+            android:textSize="20sp"
+            android:background="#AFEEEE"
+            android:layout_marginTop="20sp"/>
+
+        <Button
+            android:id="@+id/fanhui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="返回上一级"
+            android:textSize="20sp"
+            android:background="#AFEEEE"
+            android:layout_marginTop="10sp"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
