@@ -1,5 +1,6 @@
 package com.example.shetuanhui;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,7 +17,7 @@ import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.QueryListener;
 import cn.bmob.v3.listener.SaveListener;
 
-public class ZhuceActivity extends AppCompatActivity {
+public class ZhuceActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,10 +40,10 @@ public class ZhuceActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String zhanghao2 = zhanghao.getText().toString();
                 String mima2 = mima.getText().toString();
-                if(zhanghao2.length()<=6){
+                if(zhanghao2.length()<=7){
                     Toast.makeText(ZhuceActivity.this,"账号至少在7位以上", Toast.LENGTH_SHORT).show();
                 }else{
-                    if(mima2.length()<=6){
+                    if(mima2.length()<=7){
                         Toast.makeText(ZhuceActivity.this,"密码至少在7位以上", Toast.LENGTH_SHORT).show();
                     }else{
 

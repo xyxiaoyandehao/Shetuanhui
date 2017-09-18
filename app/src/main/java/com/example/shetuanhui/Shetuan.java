@@ -10,15 +10,23 @@ import cn.bmob.v3.datatype.BmobRelation;
  * Created by ASUS on 2017/9/7.
  */
 
-public class Shetuan extends BmobObject {
+public class Shetuan extends BmobObject  {
     private int id;
-    private String name;
+    private String name="未知";
     private String jianjie;
-    private BmobFile touxiang;
+    //String picPath = "src/res/drawable/qita.png";
+    BmobFile bmobFile;
+    private BmobFile touxiang=bmobFile;
     private String gonggao;
     private User user;
     private BmobRelation sheyuan;
 
+    Shetuan(String name){
+        this.name=name;
+    }
+    Shetuan(){
+        this.name=name;
+    }
     public BmobRelation getSheyuan(){return sheyuan;}
     public void setSheyuan(BmobRelation sheyuan){
         this.sheyuan=sheyuan;
